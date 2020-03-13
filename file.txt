@@ -1,0 +1,6 @@
+1	Sam	-1002
+      Steve	40
+3	Tim	70
+4	Monty	40
+5	Zac	60
+
