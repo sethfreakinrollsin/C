@@ -2,7 +2,7 @@
 #include<stdlib.h>
 //Main Function
 int main(){
-    int i,limit,count=0,j;
+    int i,limit,sum=0,mul=1;
     //Pointer 'ptr' has base address of array 
     int *ptr;
 
@@ -17,27 +17,13 @@ int main(){
     printf("Enter %d  Elements \n",limit);
     for(i=0;i<limit;i++){
         scanf("%d",&ptr[i]);
+        sum+=ptr[i];
+        mul*=ptr[i];
     }
 
-    //Processing : Finding Count Of Duplicates
-    printf("\nElements\n");
+    //Output : Display Sum and Multiplication of all Elements
+    printf("\nThe Sum of all Elements is %d \n& Multiplication of all the Elements is %d \n",sum,mul);
     
-    for(i=0;i<limit;i++){
-        for(j=i+1;j<limit;j++){
-            if(ptr[i]==ptr[j]){
-            count++;
-                if(ptr[j]==ptr[j+
-                1]){
-                count--;
-                i++;
-            }
-            }
-    }
-    }
-
-    //Output Display
-    printf("Count Of Duplicates is %d\n",count);
-    return 0;
 
 
     return 0;
