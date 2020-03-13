@@ -1,0 +1,59 @@
+Files
+
+Need For Files
+
+1. When You execute a particular program, its data is also lost  after execution.
+2. So in order to persist the data or store the data even after the program exists, we can use Files
+3. User can easily move the data from one computer to another using files.
+4. In situations where the program requires large number of input, we can store all the input in a file and thus thereby reduce the time for input.
+
+Definition
+1. Files are defined as collection  of data.
+2. This data is inter-related with each  other.
+
+Types
+1. Text Files
+2. Binary Files
+
+Differentiation
+1. Text files are normal files that can be created using text and can be modifed easily. Binary  files are .bin files in the computer.
+2. Text files contain readable data  whereas Binary files are  made  up of 0s and 1s and thus are difficult to read.  
+3. Text files are less secure  compared to binary files.
+
+Operations
+1. Reading from a file.
+2. Writing in a file.
+3. Appending into a file.
+4. Creating  a new file.
+5. Deleting a file.
+6. Renaming an existing file.
+7. Compressing  a file.
+8. Opening/Closing  a File.
+9. Moving a file.
+
+Modes
+1. Read : r,rb
+    if file exists, opened for Reading.
+    if file doesn't exists, returns NULL
+2. Write : w,rb
+    if file exists, opened for Writing.
+    if file doesn't exists, create a new file.
+3. Append : a,rb
+    if file exists, opened for Appending.
+    if file doesn't exists, create a new file.
+4. r+,rb+ : Read and  Write
+5. w+,wb+ : Write
+6. a+,ab+ : Append
+*b-Binary*
+
+File Functions
+A. File Reading
+	1. fgetc(<File Pointer>) : gets character by character from the file.
+	2. fgets(<File Pointer>,<Size>,<Variable to store it in>) : gets String from the file.
+	3. fread(<Variable>,sizeof(<Variable>),1,File Pointer) 
+B. File Writing
+	1. fputc()
+	2. fputs()
+	3. fwrite()
+
+

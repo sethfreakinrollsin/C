@@ -1,0 +1,72 @@
+Defination :
+1. There are two types of datatypes : Pre-Defined Data Types and User Defined Data Types.
+2. Structure is a User Defined Datatype.
+3. Structures are group data from different data types into a single type.
+
+Synatx :
+	struct <structure name>{
+		//members of structure
+	};
+ 
+Example :
+	struct student{
+	int roll_no;
+	char name[30];
+	float percentage;
+	char address[100];
+	};
+
+Initialisation of Structures : 
+1. Structure  memebers CANNOT be initialised at the time of initialisation.
+	Example :- 
+		struct student{
+			int roll_no =20; //Not Allowed
+		};
+2. At this time ,NO memory is allocated to the Structure Members.
+3. Hence it is not possible to initialize the structure members.
+4. Initalisation of variables is only possible after it's instace is created.
+
+Correct Initialisation of Structure members :
+
+struct point{
+	int x,y;
+} ;
+
+struct point p={0,1};
+
+1. Using Normal Structure instance
+	struct point{
+		int x,y;
+	} ;
+	
+	struct point p;
+	
+	p.x=10;
+	p.y=20;
+*Members are accessed using DOT operator for normal structure instance.*
+
+2. Stucture Pointer(s)
+	struct point{
+		int x,y;
+	};
+
+	struct point *point;
+
+	point->x=10;
+	point->y=20;
+*Members are accessed using Arrow operator  for Structure Pointer.*
+
+Array of Stuctures :
+
+Like any other primitive data type array, we can create an array of Stucture.
+
+Example :
+	struct three_d{
+		int x,y,z;
+	};
+
+	struct three_d obj[2];
+	
+	obj[0].x =10;
+	obj[0].y=10;
+	obj[0].z=20;
