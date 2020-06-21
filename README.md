@@ -2,13 +2,15 @@
 
 ## C programming (*Basic & Advance*)
 
-'''
 ### Compiling :
+```
 gcc <filename>  
- 
+
+```
 ### Executing : 
+```
 ./a.out
-'''
+```
 
 ### Developed By 
 
