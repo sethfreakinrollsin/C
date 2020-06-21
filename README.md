@@ -1,9 +1,15 @@
-College Course On 
+# College Course On 
 
-C programming (Basic & Advance)
+## C programming (*Basic & Advance*)
 
+'''
+### Compiling :
+gcc <filename>  
+ 
+### Executing : 
+./a.out
+'''
 
+### Developed By 
 
-Developed By 
-
-Akash Seth
+#### *Akash Seth*
